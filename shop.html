@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>Yard Sale</title>
+    <style>
+        :root {
+            /*  themes colors */
+            --Very-light-pink: #c7c7c7;
+            --Hospital-green: #ACD9B2;
+            --White: #FFFFFF;
+            --Dark: #233830;
+            --Text-input-field: #F7F7F7;
+            --Black: #000000;
+            --sm: 14px;
+            /*fontsize*/
+            --md: 16px;
+            /*fontsize*/
+            --lg: 18px;
+            /*fontsize*/
+
+        }
+
+        body {
+            font-family: 'Quicksand' sans-serif;
+            margin: 0;
+        }
+
+        .product-detail {
+            width: 360px;
+            padding-bottom: 24px;
+            position: absolute;
+            right: 0;
+            box-sizing: border-box;
+        }
+
+        .shopping-cart {
+            display: grid;
+            grid-template-columns: auto 1fr auto auto;
+            gap: 16px;
+            margin-bottom: 24px;
+            align-items: center;
+        }
+
+        .shopping-cart figure {
+            margin: 0;
+        }
+
+        .shopping-cart figure img {
+            width: 70px;
+            height: 70px;
+            border-radius: 20px;
+            object-fit: cover;
+
+        }
+
+        .shopping-cart p:nth-child(2) {
+            color: var(--Very-light-pink);
+        }
+
+
+        .shopping-cart p:nth-child(3) {
+            font-size: var(--md);
+            font-weight: bold;
+        }
+
+        .title-container {
+            display: flex;
+        }
+
+        .title-container img {
+            display: flex;
+            transform: rotate(180deg);
+            margin-right: 14px;
+        }
+
+        .title {
+            font-size: var(--lg);
+            font-weight: bold;
+        }
+
+        .order {
+            display: grid;
+            grid-template-columns: auto 1fr auto auto;
+            gap: 16px;
+            align-items: center;
+            background-color: var(--Text-input-field);
+            margin-bottom: 24px;
+            border-radius: 8px;
+            padding: 0 24px;
+
+        }
+
+        .order p:nth-child(1) {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .order p span:nth-child(1) {
+            font-size: var(--md);
+            font-weight: bold;
+        }
+
+
+        .order p:nth-child(2) {
+            text-align: end;
+            font-weight: bold;
+        }
+
+
+
+        .primary-button {
+            background-color: var(--Hospital-green);
+            border-radius: 8px;
+            border: none;
+            color: var(--White);
+            width: 100%;
+            cursor: pointer;
+            font-size: var(--md);
+            font-weight: bold;
+            height: 50px;
+        }
+
+
+
+        @media (max-width:640px) {
+            .product-detail {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <aside class="product-detail">
+        <div class="title-container">
+            <img src="./icons/flechita.svg" alt="arrow">
+            <p class="title">My order</p>
+        </div>
+
+
+        <div class="my-order-content">
+
+
+            <div class="shopping-cart">
+                <figure>
+                    <img src="https://images.pexels.com/photos/1413412/pexels-photo-1413412.jpeg?auto=compress&cs=tinysrgb&w=1600 "
+                        alt="bike">
+                </figure>
+                <p>Bike</p>
+                <p>$3000</p>
+                <img src="./icons/icon_close.png" alt="close">
+            </div>
+
+            <div class="shopping-cart">
+                <figure>
+                    <img src="https://images.pexels.com/photos/1413412/pexels-photo-1413412.jpeg?auto=compress&cs=tinysrgb&w=1600 "
+                        alt="bike">
+                </figure>
+                <p>Bike</p>
+                <p>$3000</p>
+                <img src="./icons/icon_close.png" alt="close">
+            </div>
+
+            <div class="shopping-cart">
+                <figure>
+                    <img src="https://images.pexels.com/photos/1413412/pexels-photo-1413412.jpeg?auto=compress&cs=tinysrgb&w=1600 "
+                        alt="bike">
+                </figure>
+                <p>Bike</p>
+                <p>$3000</p>
+                <img src="./icons/icon_close.png" alt="close">
+            </div>
+
+            <div class="shopping-cart">
+                <figure>
+                    <img src="https://images.pexels.com/photos/1413412/pexels-photo-1413412.jpeg?auto=compress&cs=tinysrgb&w=1600 "
+                        alt="bike">
+                </figure>
+                <p>Bike</p>
+                <p>$3000</p>
+                <img src="./icons/icon_close.png" alt="close">
+            </div>
+
+            <div class="order">
+                <p>
+                    <span>Total</span>
+                    <span>6 articles</span>
+                </p>
+                <p>$400</p>
+            </div>
+
+            <button class="primary-button">
+                Checkout
+            </button>
+        </div>
+
+    </aside>
+</body>
+</html>
